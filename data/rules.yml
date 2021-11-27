@@ -18,10 +18,10 @@ rules:
   - action: newsletter_form
   - active_loop: newsletter_form
 
- - rule: submit form
-   condition:
-   - active_loop: newsletter_form
-   steps:
-   - action: newsletter_form
-   - active_loop: null
-   - action: utter_subscribed
+- rule: submit form
+  condition:
+  - active_loop: newsletter_form
+  steps:
+  - action: newsletter_form
+  - active_loop: null
+  - action: utter_subscribed
