@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - subscribe
+  - inform
 
 responses:
   utter_greet:
@@ -40,6 +41,10 @@ responses:
   - text: |
           You're all set! Check your inbox at {email} to confirm your subscription.
 
+
+entities:
+  - email
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -48,4 +53,5 @@ forms:
   newsletter_form:
     required_slots:
       email:
-      - type: from_text
+      - type: from_entity
+        entity: email
