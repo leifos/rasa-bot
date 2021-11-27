@@ -13,10 +13,10 @@ rules:
   - action: utter_iamabot
 
 - rule: activate subscribe form
-   steps:
-   - intent: subscribe
-   - action: newsletter_form
-   - active_loop: newsletter_form
+  steps:
+  - intent: subscribe
+  - action: newsletter_form
+  - active_loop: newsletter_form
 
  - rule: submit form
    condition:
